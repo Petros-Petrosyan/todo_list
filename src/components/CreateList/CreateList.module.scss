@@ -1,0 +1,21 @@
+.formContainer {
+  width: 500px;
+  margin: 0 auto 50px;
+
+  &__fieldsContainer {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__field {
+      display: grid;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .formContainer {
+    width: 100%;
+  }
+}

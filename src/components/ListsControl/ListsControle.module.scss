@@ -1,0 +1,33 @@
+@import '../../styles/colors';
+
+.listContainer {
+  width: 800px;
+  margin: 0 auto 50px;
+
+  &__listPanl {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__buttons {
+      display: flex;
+
+      &__edit {
+        cursor: pointer;
+        margin: 2px;
+        color: $edit_btb_color;
+      }
+      &__delete {
+        cursor: pointer;
+        margin: 2px;
+        color: $delete_btn_color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .listContainer {
+    width: 100%;
+  }
+}
